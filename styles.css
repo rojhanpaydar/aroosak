@@ -24,6 +24,7 @@ html {
   /* height: 100%; */
   width: 100%; 
   font-size: 62.5%; 
+  background-color: #a795bd; 
 }
 
 header {
@@ -49,6 +50,7 @@ h1 {
   font-size: 100px; 
   position: absolute;
   top: 35%; 
+  color: #252525;
 }
 
 nav {
@@ -71,6 +73,7 @@ li {
   font-family: 'Source Sans Pro', sans-serif;
   list-style: none; 
   font-size: 15px; 
+  color: #252525;
 }
 
 a {
