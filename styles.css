@@ -105,10 +105,12 @@ a:hover:after {
   left: 0; 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 450px) {
 
   h1 {
     font-size: 60px;
+    font-weight: 300;
+    top: 40%; 
   }
 
   ul {
