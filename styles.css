@@ -111,4 +111,8 @@ a:hover:after {
     font-size: 60px;
   }
 
+  ul {
+    margin-left: 0; 
+  }
+
 }
