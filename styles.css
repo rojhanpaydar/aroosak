@@ -18,10 +18,12 @@ p {
   padding: 0;
 }
 
+
 body,
 html {
   height: 100%;
   width: 100%; 
+  font-size: 62.5%; 
 }
 
 .wrapper {
@@ -61,7 +63,9 @@ ul {
 }
 
 li {
+  font-family: 'Source Sans Pro', sans-serif;
   list-style: none; 
+  font-size: 15px; 
 }
 
 a {
