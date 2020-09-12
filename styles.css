@@ -49,7 +49,7 @@ h1 {
   font-family: 'Yeseva One', cursive;
   font-size: 100px; 
   position: absolute;
-  top: 35%; 
+  top: 30%; 
   color: #252525;
 }
 
@@ -76,10 +76,33 @@ li {
   color: #252525;
 }
 
+/* learned through Codepen by user named : jstn */
+
 a {
+  color: #000;
   text-decoration: none;
-  color: black; 
-  cursor: pointer;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 @media (max-width: 425px) {
