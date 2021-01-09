@@ -213,6 +213,15 @@ header.stick {
   transform: translateY(0);
 }
 
+/* global media queries */
+
+@media (max-width: 1000px) {
+  .navbar {
+    z-index: 1;
+  }
+
+}
+
 
 /* media queries for main page */
 
@@ -230,6 +239,7 @@ header.stick {
 /* media queries for about page */
 
 @media (max-width: 1000px) {
+
     div.flexContainer {
       flex-direction: column;
     }
