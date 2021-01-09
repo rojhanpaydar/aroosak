@@ -13,12 +13,13 @@
 
   <body id="about">
     <main>
-      <nav>
+      <button class="ham"></button>
+      <nav class="navbar">
         <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="blog.html">BLOG</a></li>
-          <li><a href="shop.html">SHOP</a></li>
+          <li><a class="menuLink" href="index.html">HOME</a></li>
+          <li><a class="menuLink" href="about.html">ABOUT</a></li>
+          <li><a class="menuLink" href="blog.html">BLOG</a></li>
+          <li><a class="menuLink" href="shop.html">SHOP</a></li>
         </ul>
       </nav>
       <header class="stick">
@@ -51,6 +52,24 @@
       <footer>
         <p>eliya 2021 ©</p>
       </footer>
+        <script>
+          var navbar = document.querySelector(".navbar")
+          var ham = document.querySelector(".ham")
+
+          ham.addEventListener("click", toggleHamburger)
+
+          function toggleHamburger(){
+            navbar.classList.toggle("showNav")
+            ham.classList.toggle("showClose")
+          }
+
+          var menuLinks = document.querySelectorAll(".menuLink")
+          menuLinks.forEach( 
+          function(menuLink) { 
+          menuLink.addEventListener("click", toggleHamburger) 
+        }
+      )
+      </script>
     </main>
   </body>
 </html>
