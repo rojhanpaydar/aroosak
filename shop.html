@@ -4,52 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Yeseva+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@200&family=Tenor+Sans&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/3212c86140.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
     <title>AROOSAK</title>
   </head>
 
   <body>
-    <main>
+    <main id="shop">
       <header>
-         <button class="ham"></button>
+        <h1 data-aos="fade-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="200"
+            data-aos-duration="1000">SHOP</h1>
+        <div class="overlay"></div>
+        <button class="ham"></button>
       <nav class="navbar">
         <ul>
           <li><a class="menuLink" href="index.html">HOME</a></li>
           <li><a class="menuLink" href="about.html">ABOUT</a></li>
-          <li><a class="menuLink" href="blog.html">BLOG</a></li>
           <li><a class="menuLink" href="shop.html">SHOP</a></li>
         </ul>
       </nav>
-        <div class="flexContainer wrapper">
-          <h1 class="hide">AROOSAK</h1>
-          <p>SHOP COMING SOON</p>
-          <!-- <p>Shop latest merch</p> -->
-        </div>
       </header>
-      <script>
-          var navbar = document.querySelector(".navbar")
-          var ham = document.querySelector(".ham")
-
-          ham.addEventListener("click", toggleHamburger)
-
-          function toggleHamburger(){
-            navbar.classList.toggle("showNav")
-            ham.classList.toggle("showClose")
-          }
-
-          var menuLinks = document.querySelectorAll(".menuLink")
-          menuLinks.forEach( 
-          function(menuLink) { 
-          menuLink.addEventListener("click", toggleHamburger) 
-        }
-      )
-      </script>
-      <footer>
-        <p>eliya 2021 ©</p>
-      </footer>
-    </main>
+      <section>
+        <div class="wrapper flexContainer">
+          <h2>COMING SOON!</h2>
+          <!-- shop is not open yet, below is a test product -->
+          <!-- <div id="product-component-1615575416378"></div> -->
+          <!-- <script src="shop.js"></script> -->
+          <script src="nav.js"></script>
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+        </main>
+      <footer id="footerShop">
+      <p>eliya 2021 © developed by @rothecoder</p>
+    </footer>
   </body>
 </html>
