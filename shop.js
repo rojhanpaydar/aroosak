@@ -1,4 +1,5 @@
 /*<![CDATA[*/
+
 (function () {
   var scriptURL =
     "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
@@ -27,18 +28,31 @@
       storefrontAccessToken: "4476e2cc99e17d6064f281593c2a854c",
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
-      ui.createComponent("product", {
-        id: "6585709396128",
-        node: document.getElementById("product-component-1615575416378"),
+      ui.createComponent("collection", {
+        id: "262026821792",
+        node: document.getElementById("collection-component-1615915517589"),
         moneyFormat: "%24%7B%7Bamount%7D%7D",
         options: {
           product: {
             styles: {
               product: {
                 "@media (min-width: 601px)": {
-                  "max-width": "calc(25% - 20px)",
-                  "margin-left": "20px",
+                  "max-width": "calc(50% - 40px)",
+                  "margin-left": "40px",
                   "margin-bottom": "50px",
+                  width: "calc(50% - 40px)",
+                },
+                img: {
+                  height: "calc(100% - 15px)",
+                  position: "absolute",
+                  left: "0",
+                  right: "0",
+                  top: "0",
+                },
+                imgWrapper: {
+                  "padding-top": "calc(75% + 15px)",
+                  position: "relative",
+                  height: "0",
                 },
               },
               title: {
@@ -68,19 +82,16 @@
               price: {
                 "font-family": "Open Sans, sans-serif",
                 "font-weight": "bold",
-                "font-size": "16px",
                 color: "#252525",
               },
               compareAt: {
                 "font-family": "Open Sans, sans-serif",
                 "font-weight": "bold",
-                "font-size": "13.6px",
                 color: "#252525",
               },
               unitPrice: {
                 "font-family": "Open Sans, sans-serif",
                 "font-weight": "bold",
-                "font-size": "13.6px",
                 color: "#252525",
               },
             },
@@ -88,7 +99,6 @@
             contents: {
               options: false,
             },
-            width: "380px",
             text: {
               button: "View product",
             },
@@ -98,7 +108,7 @@
             styles: {
               products: {
                 "@media (min-width: 601px)": {
-                  "margin-left": "-20px",
+                  "margin-left": "-40px",
                 },
               },
             },
@@ -223,3 +233,12 @@
   }
 })();
 /*]]>*/
+
+// POPUP
+
+setTimeout(function () {
+  Swal.fire({
+    title: "Pssst! 👀 ",
+    text: "Buy any three prints to qualify for FREE SHIPPING!",
+  });
+}, 3000);

@@ -18,7 +18,7 @@
   <body>
     <main>
       <header>
-        <button class="ham"></button>
+        <button class="ham sticky"></button>
         <nav class="navbar">
           <ul>
             <li><a class="menuLink" href="index.html">HOME</a></li>
@@ -45,12 +45,15 @@
           </h1>
         </div>
       </header>
-      <section class="sectionBackground data-aos="fade-in"
+      <section
+        class="sectionBackground"
+        data-aos="fade-in"
         data-aos-easing="ease-in-out"
         data-aos-delay="200"
-        data-aos-duration="1000">
+        data-aos-duration="1000"
+      >
         <div class="wrapper">
-          <div class="flexContainer sectionSpace">
+          <div class="flexContainer sectionSpace" style="overflow: hidden">
             <div
               class="leftWidth"
               data-aos="fade-down-right"
@@ -60,31 +63,27 @@
             >
               <img
                 class="eliyaSitting"
-                src="./assets/eliya_sitting.JPG"
-                alt="Eliya sitting"
+                src="./assets/eliya_homepage.jpg"
+                alt="Eliya"
               />
             </div>
 
             <div
-              class="rightWidth"
+              class="rightWidth half"
               data-aos="fade-up-left"
               data-aos-easing="ease-in-out"
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              <div class="half">
-                <h2>Hello!</h2>
-                <p>
-                  My name is Eliya and I am a West-Asian woman based in Toronto.
-                  I am an aspiring social worker hoping to specialize in helping
-                  people with eating disorders and abuse survivors. I am an
-                  abuse survivor myself who also has OCD, ADHD, survived
-                  depression, and recovering from an eating disorder.
-                </p>
-                <button>
-                  <a href="about.html"><p>learn more about Eliya</p></a>
-                </button>
-              </div>
+              <h2>Hello!</h2>
+              <p>
+                My name is Eliya. I am a Toronto based West- Asian mental health
+                advocate and content creator. I love to focus on all things self
+                and communal care.
+              </p>
+              <button>
+                <a href="about.html"><p>learn more about Eliya</p></a>
+              </button>
             </div>
           </div>
         </div>
@@ -113,7 +112,7 @@
         </div>
       </section>
       <section
-      class="wrapper"
+        class="wrapper"
         data-aos="fade-in"
         data-aos-easing="ease-in-out"
         data-aos-delay="500"
@@ -122,7 +121,6 @@
         <h3>For more affirmations, find me on Instagram</h3>
         <div
           id="curator-feed-default-feed-layout"
-          
           data-aos="fade-in"
           data-aos-easing="ease-in-out"
           data-aos-delay="700"
@@ -135,7 +133,10 @@
       </section>
     </main>
     <footer>
-      <p>eliya 2021 © || developed by @rothecoder</p>
+      <p>
+        eliya 2021 © || developed by
+        <a class="roLink" href="https://www.rothecoder.com">@rothecoder</a>
+      </p>
     </footer>
     <script src="curator.js"></script>
     <script src="nav.js"></script>
