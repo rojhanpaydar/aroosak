@@ -234,11 +234,11 @@
 })();
 /*]]>*/
 
-// POPUP
+// POPUP currently turned off
 
-setTimeout(function () {
-  Swal.fire({
-    title: "Pssst! 👀 ",
-    text: "Buy any three prints to qualify for FREE SHIPPING!",
-  });
-}, 3000);
+// setTimeout(function () {
+//   Swal.fire({
+//     title: "Pssst! 👀 ",
+//     text: "Buy any three prints to qualify for FREE SHIPPING!",
+//   });
+// }, 3000);
