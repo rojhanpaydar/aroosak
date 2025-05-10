@@ -1,5 +1,5 @@
 /*<![CDATA[*/
-
+window.addEventListener("load", function () {
 (function () {
   var scriptURL =
     "https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js";
@@ -232,6 +232,8 @@
     });
   }
 })();
+});
+
 /*]]>*/
 
 // POPUP currently turned off

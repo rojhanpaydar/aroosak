@@ -3,46 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fahkwang:wght@200&family=Tenor+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <script
       src="https://kit.fontawesome.com/3212c86140.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>AROOSAK</title>
+    <title>AROOSAK || SHOP</title>
   </head>
 
-  <body class="bgColor">
-    <main id="shop">
-      <header>
-        <h1>SHOP</h1>
-        <div class="overlay"></div>
-        <button class="ham sticky"></button>
-      <nav class="navbar">
-        <ul>
-          <li><a class="menuLink" href="index.html">HOME</a></li>
-          <li><a class="menuLink" href="about.html">ABOUT</a></li>
-          <li><a class="menuLink" href="shop.html">SHOP</a></li>
-        </ul>
-      </nav>
+  <body class="shopBackgroundColour">
+    <main>
+      <header id="shop">
+        <div class="flexContainer">
+          <h1 class="headerContainer smallLogo"><img src="./assets/aroosaklogo.PNG"/></h1>
+          <nav>
+            <ul>
+              <li><a class="menuLink" href="index.html">HOME</a></li>
+              <li><a class="menuLink" href="newAbout.html">ABOUT</a></li>
+              <li><a class="menuLink" href="vision.html">VISION</a></li>
+              <li><a class="menuLink" href="shop.html">SHOP</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-      <section>
-        <div class="wrapper flexContainer">
+      <section id="shop" class="shopBgSection">
+        <div class="wrapper sectionFlexContainer">
           <div class="space" id='collection-component-1615915517589'></div>
+        </section>
           <script src="shop.js"></script>
           <script src="nav.js"></script>
-          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-          <script>
-            AOS.init();
-          </script>
         </main>
-      <footer class="shopFooter">
-      <p>eliya 2021 © || developed by <a class="roLink" href="https://www.rothecoder.com">@rothecoder</a></p>
+      <footer class="shopFooter shopFooterSection">
+      <p>aroosak 2025 © || developed by <a class="roLink" href="https://www.rothecoder.com">@rothecoder</a></p>
     </footer>
   </body>
 </html>
